@@ -20,10 +20,10 @@ Were the charges of treason, adultery, and incest against Anne Boleyn likely fab
 
 &lt;a href=&quot;https://imgflip.com/i/95yzbp&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/95yzbp.jpg&quot;/&gt;&lt;/a&gt;&lt;div&gt;&lt;a href=&quot;https://imgflip.com/memegenerator&quot;&gt;from Imgflip Meme Generator&lt;/a&gt;&lt;/div&gt;
 
-Start here!! &#39;&#39;[[ I am ready to stand my ground]]&#39;&#39;</tw-passagedata><tw-passagedata pid="2" name=" I am ready to stand my ground" tags="" position="675,450" size="100,100">Your fate hangs in the balance, but perhaps you can still //alter your destiny—or at least secure your legacy.
-//
-[[Prepare for your trial.]] 
-[[Reflect on your past.]] </tw-passagedata><tw-passagedata pid="3" name="Prepare for your trial." tags="" position="525,525" size="100,100">You must face the accusations head-on. Thomas Cromwell has rallied your enemies, and the biased jury awaits your appearance. The charges against you seem impossible to overcome.
+Start here!! &#39;&#39;[[ I am ready to stand my ground]]&#39;&#39;</tw-passagedata><tw-passagedata pid="2" name=" I am ready to stand my ground" tags="" position="675,450" size="100,100">Your fate hangs in the balance, but perhaps you can still //alter your destiny—or at least secure your legacy.//
+
+[[Prepare for your trial.]] (set: $choice to &quot;trial&quot;)
+[[Reflect on your past.]] (set: $choice to &quot;reflection&quot;)</tw-passagedata><tw-passagedata pid="3" name="Prepare for your trial." tags="" position="525,525" size="100,100">You must face the accusations head-on. Thomas Cromwell has rallied your enemies, and the biased jury awaits your appearance. The charges against you seem impossible to overcome.
 
 [[Confront the charges with confidence]]
 [[Play the role of a meek queen.]] </tw-passagedata><tw-passagedata pid="4" name="Reflect on your past." tags="" position="825,500" size="100,100">You remember how it all began—//Henry’s relentless pursuit, your rise to power, and the enemies you made along the way.//
@@ -41,8 +41,9 @@ Start here!! &#39;&#39;[[ I am ready to stand my ground]]&#39;&#39;</tw-passaged
 &lt;a title=&quot;National Portrait Gallery
 , Public domain, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Anne_Boleyn.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Anne Boleyn&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Anne_Boleyn.jpg/512px-Anne_Boleyn.jpg?20090427064608&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="6" name="Confront the charges with confidence" tags="" position="725,675" size="100,100">You stand before the court, denying the accusations. Thomas Cromwell glares at you from across the room. You know he orchestrated this trial.
 
-[[Expose Cromwell’s motives-&gt;I reached too far.]] 
-[[Defend your innocence-&gt;I reached too far.]] </tw-passagedata><tw-passagedata pid="7" name="Remain silent and accept your fate." tags="" position="700,900" size="100,100">The verdict is delivered: &#39;&#39;guilty &#39;&#39;Your heart sinks as you are sentenced to death. There is no justice here, only the execution of a plan set in motion by your enemies.
+[[Expose Cromwell’s motives-&gt;I reached too far.]] (set: $action to &quot;expose&quot;)
+[[Defend your innocence-&gt;I reached too far.]] (set: $action to &quot;defend&quot;)
+</tw-passagedata><tw-passagedata pid="7" name="Remain silent and accept your fate." tags="" position="700,900" size="100,100">The verdict is delivered: &#39;&#39;guilty &#39;&#39;Your heart sinks as you are sentenced to death. There is no justice here, only the execution of a plan set in motion by your enemies.
 
 [[Have a final conversation with George-&gt;Have a final conversation with George.]] 
 </tw-passagedata><tw-passagedata pid="8" name="Appeal to Henry’s mercy." tags="" position="325,800" size="100,100">Your voice falters, but you present your case or make your appeal. (bg:red)[Yet, the cold eyes of the jury seem unmoved. You know your fate is sealed.]
@@ -66,7 +67,9 @@ With your appeal dismissed and no one to turn to, you resign yourself to your fa
 
 &lt;a href=&quot;https://imgflip.com/i/95z1u5&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/95z1u5.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;&lt;div&gt;&lt;a href=&quot;https://imgflip.com/memegenerator&quot;&gt;from Imgflip Meme Generator&lt;/a&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Ask him to protect your daughter Elizabeth." tags="" position="675,1200" size="100,100">You are led to the scaffold. The crowd watches in silence as you approach the executioner. You feel calm, your final moments upon you.
 
-[[Close your eyes and accept your fate.]] 
+[[Close your eyes and accept your fate.]] (set: $fateAcceptance to true)
+
+
 </tw-passagedata><tw-passagedata pid="12" name="Tell him you have no regrets." tags="" position="850,1225" size="100,100">(text-colour:red)[You are led to the scaffold. ]The crowd watches in silence as you approach the executioner. You feel calm, your final moments upon you.
 
 [[Close your eyes and accept your fate-&gt;Ask him to protect your daughter Elizabeth.]] 
@@ -75,23 +78,19 @@ With your appeal dismissed and no one to turn to, you resign yourself to your fa
  Was Anne Boleyn’s daughter, Elizabeth, destined to become queen of England?
 
 (after:2s)[[[True|ElizabethTrue]] [[False|ElizabethFalse]]
-]
+]</tw-passagedata><tw-passagedata pid="13" name="Close your eyes and accept your fate." tags="" position="600,1325" size="100,100">You have accepted your fate.(bg:red)[ With dignity,] you close your eyes, feeling the weight of history on your shoulders. You hope your legacy will shine through your daughter, Elizabeth.
 
-
-</tw-passagedata><tw-passagedata pid="13" name="Close your eyes and accept your fate." tags="" position="675,1325" size="100,100">You have accepted your fate.(bg:red)[ With dignity,] you close your eyes, feeling the weight of history on your shoulders. You hope your legacy will shine through your daughter, Elizabeth.
-
-//[[The End]]//</tw-passagedata><tw-passagedata pid="14" name="The End" tags="" position="675,1450" size="100,100">(bg:red)[Anne Boleyn, your execution took place on May 19, 1536, on the orders of your husband, King Henry VIII. Despite your initial rise to power as his second wife and Queen of England, the charges of adultery, treason, and incest led to your downfall. On that fateful day at the Tower of London, your life came to a tragic end, but your legacy in history and the Reformation endures.]
-
+//[[The End]]//</tw-passagedata><tw-passagedata pid="14" name="The End" tags="" position="675,1450" size="100,100">(bg:red)[Anne Boleyn, your execution took place on May 19, 1536, on the orders of your husband, King Henry VIII. Despite your initial rise to power as his second wife and Queen of England, the charges of adultery, treason, and incest led to your downfall. On that fateful day at the Tower of London, your life came to a tragic end, but your legacy in history and the Reformation endures.] 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/wF_UpYqYJuY?si=ew4vjp5a-uVh0nGo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 
-Did Anne Boleyn ever have a chance of being released, or was her fate always execution?
-(after:2s)[[[True|TrueAnswer]] [[False|FalseAnswer]]]
+Did Anne Boleyn ever have a chance of being released? 
+(after:2s)[[[No|TrueAnswer]] [[Yes|FalseAnswer]]]
 
 </tw-passagedata><tw-passagedata pid="15" name="Think about your courtship with Henry." tags="" position="975,625" size="100,100">Henry abandoned (bg:red)[Catherine of Aragon] to marry you, a decision that caused an irreversible split with the Catholic Church. &#39;&#39;Was it love, or something more?&#39;&#39;
 
-[[It was love.]] 
-[[It was ambition.]] 
+[[It was love.]] (set: $motivation to &quot;love&quot;)
+[[It was ambition.]] (set: $motivation to &quot;ambition&quot;)
 
 &lt;a href=&quot;https://imgflip.com/i/95z8eb&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/95z8eb.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;&lt;div&gt;&lt;a href=&quot;https://imgflip.com/memegenerator&quot;&gt;from Imgflip Meme Generator&lt;/a&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Recall your ambitions as Queen." tags="" position="925,825" size="100,100">As Queen, you sought influence not only over the court but over the future of England. Your involvement in the Reformation changed the country, but it also made you many enemies.
 
@@ -118,14 +117,14 @@ Did Anne Boleyn ever have a chance of being released, or was her fate always exe
 [[I regret nothing-&gt;Recall your ambitions as Queen.]] 
 [[I reached too far-&gt;Recall your ambitions as Queen.]] </tw-passagedata><tw-passagedata pid="21" name="Confront your fate." tags="" position="775,1075" size="100,100">The verdict is delivered: guilty. Your heart sinks as you are sentenced to death. There is no justice here, only the execution of a plan set in motion by your enemies.
 
-[[Have a final conversation with George-&gt;Have a final conversation with George.]] 
+[[Have a final conversation with George-&gt;Have a final conversation with George.]]  
+
 
 </tw-passagedata><tw-passagedata pid="22" name="I regret nothing." tags="" position="925,1075" size="100,100">You stand before the court, denying the accusations. Thomas Cromwell glares at you from across the room. You know he orchestrated this trial.
 
-[[Expose Cromwell’s motives-&gt;I reached too far.]] 
-[[Defend your innocence-&gt;I reached too far.]] </tw-passagedata><tw-passagedata pid="23" name="I reached too far." tags="" position="1400,1100" size="100,100">You stand before the court, denying the accusations. Thomas Cromwell glares at you from across the room. You know he orchestrated this trial.
+[[Expose Cromwell’s motives-&gt;I reached too far.]] (set: $action to &quot;expose&quot;)
+[[Defend your innocence-&gt;I reached too far.]] (set: $action to &quot;defend&quot;)</tw-passagedata><tw-passagedata pid="23" name="I reached too far." tags="" position="1400,1100" size="100,100">You stand before the court, denying the accusations. Thomas Cromwell glares at you from across the room. You know he orchestrated this trial.
 
-[[Expose Cromwell’s motives.]] 
 [[Defend your innocence.]] </tw-passagedata><tw-passagedata pid="24" name="TrueAnswer" tags="" position="550,1575" size="100,100">(set: $answer to &quot;True&quot;)
 (if: $answer is &quot;True&quot;)[You&#39;re correct! Anne Boleyn&#39;s fate was sealed, and she was executed.]</tw-passagedata><tw-passagedata pid="25" name="FalseAnswer" tags="" position="675,1575" size="100,100">(set: $answer to &quot;False&quot;)
 (if: $answer is &quot;False&quot;)[Sorry, that&#39;s incorrect. Anne Boleyn&#39;s fate was always to be execution.]</tw-passagedata><tw-passagedata pid="26" name="ElizabethTrue" tags="" position="850,1350" size="100,100">(set: $answer to &quot;True&quot;)
